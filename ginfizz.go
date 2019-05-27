@@ -2,7 +2,7 @@
  * @Author: berryberry
  * @LastAuthor: Do not edit
  * @since: 2019-05-10 10:59:09
- * @lastTime: 2019-05-21 22:07:46
+ * @lastTime: 2019-05-27 10:34:56
  */
 package ginfizz
 
@@ -67,9 +67,9 @@ func Run() {
 	}()
 
 	Logger.Info(fmt.Sprintf("start http server listening %d", FizzConfig.App.HttpPort))
-	tamaServer := &http.Server{Addr: fmt.Sprintf(":%d", FizzConfig.App.HttpPort), Handler: Engine()}
+	fizzServer := &http.Server{Addr: fmt.Sprintf(":%d", FizzConfig.App.HttpPort), Handler: Engine()}
 	go func() {
-		err := tamaServer.ListenAndServe()
+		err := fizzServer.ListenAndServe()
 		if err != nil {
 			Logger.Errorf("start http server error: %s", err)
 			endRunning <- struct{}{}
@@ -91,7 +91,7 @@ func Run() {
 		if err := monitorServer.Shutdown(ctx); err != nil {
 			Logger.Error("Monitor server shutdown error", err)
 		}
-		if err := tamaServer.Shutdown(ctx); err != nil {
+		if err := fizzServer.Shutdown(ctx); err != nil {
 			Logger.Error("http server shutdown error", err)
 		}
 		shutdown <- struct{}{}
