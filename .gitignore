@@ -1,4 +1,7 @@
 .idea
 .vscode
 
+/vendor/*
+!/vendor/vendor.json
+
 experiments/
