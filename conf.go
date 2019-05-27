@@ -2,7 +2,7 @@
  * @Author: berryberry
  * @LastAuthor: Do not edit
  * @since: 2019-05-10 11:38:56
- * @lastTime: 2019-05-21 22:09:05
+ * @lastTime: 2019-05-27 14:58:14
  */
 package ginfizz
 
@@ -83,7 +83,7 @@ func init() {
 					},
 				},
 				DB: DBConfig{
-					Enable:   true,
+					Enable:   false,
 					DBType:   DBTypeMysql,
 					Username: "root",
 					Password: "root",
