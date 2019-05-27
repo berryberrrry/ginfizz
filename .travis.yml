@@ -27,6 +27,7 @@ install:
 
 go_import_path: github.com/berryberrrry/ginfizz
 
+
 script:
   go test
 
