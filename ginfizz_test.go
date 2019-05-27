@@ -1,7 +1,7 @@
 /*
  * @Author: berryberry
  * @since: 2019-05-27 17:32:16
- * @lastTime: 2019-05-27 17:50:26
+ * @lastTime: 2019-05-27 18:12:16
  * @LastAuthor: Do not edit
  */
 package ginfizz
@@ -23,7 +23,7 @@ func setupHTML(t *testing.T) *httptest.Server {
 	router.Delims("{[{", "}]}")
 	router.LoadHTMLGlob("./testdata/*")
 	router.GET("/test", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "test.tmpl", map[string]string{"name": "world"})
+		c.HTML(http.StatusOK, "hello.tmpl", map[string]string{"name": "world"})
 	})
 	return httptest.NewServer(router)
 }
