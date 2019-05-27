@@ -17,6 +17,18 @@
 			"revisionTime": "2017-01-09T09:34:21Z"
 		},
 		{
+			"checksumSHA1": "xHtlyHzyr2SeWwxDWHhY9J42GvU=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "202f8fc58af47ab5c8e834662ee7fc46deacc37d",
+			"revisionTime": "2019-04-24T12:21:41Z"
+		},
+		{
+			"checksumSHA1": "XT0bw8+pmoObI9jEq7zcPfLGh9g=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "972a708cf97995463843c08c8585b26997daf0e1",
+			"revisionTime": "2019-02-17T07:26:58Z"
+		},
+		{
 			"checksumSHA1": "mE9XW26JSpe4meBObM6J/Oeq0eg=",
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "aa810b61a9c79d51363740d207bb46cf8e620ed5",
@@ -47,6 +59,12 @@
 			"revisionTime": "2018-12-26T10:54:42Z"
 		},
 		{
+			"checksumSHA1": "joDFKePgAu4Myh/U+0RK+fGHKwg=",
+			"path": "github.com/prometheus/client_golang/prometheus",
+			"revision": "2d3b0fe0e076983b5c4d56ca429a12b7eec8dad5",
+			"revisionTime": "2019-05-06T22:10:32Z"
+		},
+		{
 			"checksumSHA1": "c6pbpF7eowwO59phRTpF8cQ80Z0=",
 			"path": "github.com/stretchr/testify/assert",
 			"revision": "f35b8ab0b5a2cef36673838d662e249dd9c94686",
@@ -61,6 +79,18 @@
 			"revisionTime": "2018-04-07T10:07:33Z",
 			"version": "v1.1",
 			"versionExact": "v1.1.1"
+		},
+		{
+			"checksumSHA1": "bs4Qet93Z8f2eB8MVdM2hXXTyso=",
+			"path": "go.uber.org/zap",
+			"revision": "67bc79d13d155c02fd008f721863ff8cc5f30659",
+			"revisionTime": "2018-08-14T18:34:19Z"
+		},
+		{
+			"checksumSHA1": "iH3qg/pvsxQ9XW5t8FTc6veuYhY=",
+			"path": "go.uber.org/zap/zapcore",
+			"revision": "67bc79d13d155c02fd008f721863ff8cc5f30659",
+			"revisionTime": "2018-08-14T18:34:19Z"
 		},
 		{
 			"checksumSHA1": "GtamqiJoL7PGHsN454AoffBFMa8=",
@@ -83,6 +113,12 @@
 			"versionExact": "v8.18.2"
 		},
 		{
+			"checksumSHA1": "TM3Neoy1xRAKyZYMGzKc41sDFW4=",
+			"path": "gopkg.in/natefinch/lumberjack.v2",
+			"revision": "a96e63847dc3c67d17befa69c303767e2f84e54f",
+			"revisionTime": "2017-05-31T16:03:50Z"
+		},
+		{
 			"checksumSHA1": "ZSWoOPUNRr5+3dhkLK3C4cZAQPk=",
 			"path": "gopkg.in/yaml.v2",
 			"revision": "5420a8b6744d3b0345ab293f6fcba19c978f1183",
@@ -91,5 +127,5 @@
 			"versionExact": "v2.2.1"
 		}
 	],
-	"rootPath": "github.com/gin-gonic/gin"
+	"rootPath": "github.com/berryberrrry/ginfizz"
 }
