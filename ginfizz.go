@@ -2,7 +2,7 @@
  * @Author: berryberry
  * @LastAuthor: Do not edit
  * @since: 2019-05-10 10:59:09
- * @lastTime: 2019-05-27 17:36:44
+ * @lastTime: 2019-05-29 21:36:01
  */
 package ginfizz
 
@@ -14,6 +14,8 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/berryberrrry/ginfizz/middleware/pprof"
 
 	"github.com/berryberrrry/ginfizz/middleware/monitor"
 	"github.com/prometheus/client_golang/prometheus"
@@ -45,6 +47,10 @@ func Engine() *gin.Engine {
 		// if enable monitor
 		if FizzConfig.Monitor.Enable {
 			engine.Use(monitor.Metric)
+		}
+
+		if FizzConfig.App.Pprof.Enable {
+			pprof.AllowPprof(engine)
 		}
 		return engine
 	}
