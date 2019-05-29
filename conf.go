@@ -2,7 +2,7 @@
  * @Author: berryberry
  * @LastAuthor: Do not edit
  * @since: 2019-05-10 11:38:56
- * @lastTime: 2019-05-27 14:58:14
+ * @lastTime: 2019-05-29 20:24:54
  */
 package ginfizz
 
@@ -26,6 +26,7 @@ type AppConfig struct {
 	Limit    LimitConfig
 	Log      LogConfig
 	DB       DBConfig
+	Pprof    PprofConfig
 }
 
 type MonitorConfig struct {
@@ -49,6 +50,10 @@ type DBConfig struct {
 	Port     int
 	DBName   string
 	Charset  string
+}
+
+type PprofConfig struct {
+	Enable bool
 }
 
 type LimitConfig struct {
@@ -95,6 +100,9 @@ func init() {
 				Limit: LimitConfig{
 					Enable:     true,
 					MaxAllowed: 3,
+				},
+				Pprof: PprofConfig{
+					Enable: true,
 				},
 			},
 			Monitor: MonitorConfig{
