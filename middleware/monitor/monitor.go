@@ -2,7 +2,7 @@
  * @Author: berryberry
  * @LastAuthor: Do not edit
  * @since: 2019-05-10 19:28:56
- * @lastTime: 2019-05-29 20:01:52
+ * @lastTime: 2019-06-03 21:18:40
  */
 package monitor
 
@@ -74,6 +74,9 @@ func Metric(c *gin.Context) {
 }
 
 func MaxAllowedAndMontiorQueuedProcessingRequest(n int) gin.HandlerFunc {
+	if n < 0 {
+		return func(c *gin.Context) {}
+	}
 	sem := make(chan struct{}, n)
 
 	acquire := func(path, method string) {

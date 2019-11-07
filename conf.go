@@ -62,7 +62,7 @@ type LimitConfig struct {
 }
 
 type LogRotatorConfig struct {
-	Filename   string // 日志文件路径
+	Filename   string // 日志文件名
 	MaxSize    int    // megabytes
 	MaxBackups int    // 最多保留3个备份
 	MaxAge     int    // days
@@ -99,7 +99,7 @@ func init() {
 				},
 				Limit: LimitConfig{
 					Enable:     true,
-					MaxAllowed: 3,
+					MaxAllowed: 100,
 				},
 				Pprof: PprofConfig{
 					Enable: true,

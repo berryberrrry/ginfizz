@@ -1,7 +1,7 @@
 /*
  * @Author: berryberry
  * @since: 2019-05-16 21:11:41
- * @lastTime: 2019-05-29 19:44:53
+ * @lastTime: 2019-05-31 15:54:16
  * @LastAuthor: Do not edit
  */
 package ginfizz
@@ -42,6 +42,6 @@ func initDB() {
 			panic(err)
 		}
 	case DBTypeMongo:
-		//TODO(WK)
+		// client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
 	}
 }
