@@ -31,9 +31,10 @@ func InitFizz() {
 	if FizzConfig.App.Log.Enable {
 		initLogger()
 	}
-	if FizzConfig.App.DB.Enable {
-		initDB()
-	}
+	// v0版本不支持数据库操作
+	// if FizzConfig.App.DB.Enable {
+	// 	initDB()
+	// }
 }
 
 func Engine() *gin.Engine {

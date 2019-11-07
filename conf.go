@@ -25,8 +25,8 @@ type AppConfig struct {
 	HttpPort int
 	Limit    LimitConfig
 	Log      LogConfig
-	DB       DBConfig
 	Pprof    PprofConfig
+	//DB       DBConfig  #v0版本暂时不支持数据库操作
 }
 
 type MonitorConfig struct {
@@ -87,16 +87,6 @@ func init() {
 						Compress:   false,
 					},
 				},
-				DB: DBConfig{
-					Enable:   false,
-					DBType:   DBTypeMysql,
-					Username: "root",
-					Password: "root",
-					Host:     "localhost",
-					Port:     3306,
-					DBName:   "tama",
-					Charset:  "utf8",
-				},
 				Limit: LimitConfig{
 					Enable:     true,
 					MaxAllowed: 100,
@@ -104,6 +94,16 @@ func init() {
 				Pprof: PprofConfig{
 					Enable: true,
 				},
+				// DB: DBConfig{
+				// 	Enable:   false,
+				// 	DBType:   DBTypeMysql,
+				// 	Username: "root",
+				// 	Password: "root",
+				// 	Host:     "localhost",
+				// 	Port:     3306,
+				// 	DBName:   "tama",
+				// 	Charset:  "utf8",
+				// },
 			},
 			Monitor: MonitorConfig{
 				Enable:   true,
