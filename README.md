@@ -54,9 +54,10 @@ Tips: (你可以在 *ginfizz.InitFizz()* 之前进行项目变量的配置，控
 
 #### **日志管理(logger)**
 
-ginfizz帮你集成了 *go.uber.org/zap* ,你只需要修改配置来控制复杂的 *logger* 逻辑.
+*ginfizz* 帮你集成了 *go.uber.org/zap* ,你只需要修改配置来控制复杂的 *logger* 逻辑.
 
-你可以在初始化之前进行 *Logger* 的配置,通过修改 *ginfizz.FizzConfig.App.Log* 来控制logger的存储路径、存储文件名、logLevel、log文件的最大存储容量、log文件时效以及是否压缩和压缩后的文件名等等，详情可以参考 *conf.go* 以及[go.uber.org/zap](https://github.com/uber-go/zap) [gopkg.in/natefinch/lumberjack.v2](https://github.com/natefinch/lumberjack)
+你可以在初始化之前进行 *Logger* 的配置,通过修改 *ginfizz.FizzConfig.App.Log* 来控制logger的存储路径、存储文件名、logLevel、log文件的最大存储容量、log文件时效以及是否压缩和压缩后的文件名等等，详情可以参考 *conf.go* .
+你也可以通过[go.uber.org/zap](https://github.com/uber-go/zap) 和 [gopkg.in/natefinch/lumberjack.v2](https://github.com/natefinch/lumberjack) 了解更改关于 *logger* 的信息
 
 #### **Prometheus监控**
 
