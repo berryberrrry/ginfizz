@@ -116,3 +116,6 @@ func Test() {
     }
 }
 ```
+
+#### **更容易用的mongo**
+*ginfizz* 帮你封装了mongodb的一系列操作，提供了一系列类似于gorm的接口，帮助用户更好的编写mongo数据库操作
